@@ -3,10 +3,6 @@ import pactum from 'pactum';
 import { SimpleReporter } from '../simple-reporter';
 import { StatusCodes } from 'http-status-codes';
 
-console.log(`token: ${process.env.DISCORD_TOKEN}`);
-console.log(`clientId: ${process.env.CLIENT_ID}`);
-console.log(`guildId: ${process.env.GUILD_ID}`);
-
 describe('Discord API Integration Tests', () => {
     const p = pactum;
     const rep = SimpleReporter;
