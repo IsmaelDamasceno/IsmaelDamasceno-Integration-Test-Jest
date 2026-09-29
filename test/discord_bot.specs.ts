@@ -3,6 +3,10 @@ import pactum from 'pactum';
 import { SimpleReporter } from '../simple-reporter';
 import { StatusCodes } from 'http-status-codes';
 
+console.log('DISCORD_TOKEN exists:', !!process.env.DISCORD_TOKEN);
+console.log('DISCORD_TOKEN length:', process.env.DISCORD_TOKEN?.length);
+console.log('CLIENT_ID:', process.env.CLIENT_ID);
+
 describe('Discord API Integration Tests', () => {
   const p = pactum;
   const rep = SimpleReporter;
